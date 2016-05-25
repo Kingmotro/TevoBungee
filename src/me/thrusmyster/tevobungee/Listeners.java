@@ -50,9 +50,13 @@ public class Listeners implements Listener {
 	}
 	
 	@EventHandler
-	public void onJoin(PostLoginEvent e)
-	{
+	public void onJoin(PostLoginEvent e) {
 		Logins.incrementLogins(e.getPlayer().getName());
+	}
+
+	@EventHandler
+	public void onTest(LoginEvent e) {
+
 	}
 	
 	@EventHandler
